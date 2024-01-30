@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Registrar Oferta</title>
+</head>
+<body>
+<header>
+    <section id="cabezal">
+        <a href="/indexOfertas" id="logo">Ofertas</a>
+        <a href="/login"><button class="cabezal">Ingresar</button></a>
+    </section>
+</header>
+
+<h2 id="bienvenido">Bienvenido</h2>
+<div class="separador"></div>
+
+<form class="formulario-main" action="/registrarOfertaEmprendedor" method="post" enctype="multipart/form-data">
+    <section id="formulario-registrar">
+        <section id="formulario-titulo">
+            <h1 id="registro">Registrar Oferta</h1>
+        </section>
+        <section id="formulario">
+            <section id="field-text">
+                <label for="NombreOferta">Nombre de la oferta</label>
+                <input type="text" id="NombreOferta" name="NombreOferta" placeholder="Ingresa el nombre" required>
+            </section>
+
+            <section id="field-text">
+                <label for="CantidadLimite">Cantidad Límite</label>
+                <input type="number" id="CantidadLimite" name="CantidadLimite" placeholder="Ingresa la cantidad" required>
+            </section>
+
+            <section id="field-text">
+                <label for="Descripcion">Descripción</label>
+                <input type="text" id="Descripcion" name="Descripcion" placeholder="Ingresa la descripcion" required>
+            </section>
+
+            <section id="field-text">
+                <label for="FechaInicio">Fecha de Inicio</label>
+                <input type="date" id="FechaInicio" name="FechaInicio" placeholder="dd/mm/aaaa" required>
+            </section>
+
+            <section id="field-text">
+                <label for="FechaFin">Fecha de Fin</label>
+                <input type="date" id="FechaFin" name="FechaFin" placeholder="dd/mm/aaaa" required>
+            </section>
+
+            <section id="field-text">
+                <label for="Monto">Precio</label>
+                <input type="text" id="Monto" name="Monto" placeholder="Ingrese el precio" required>
+            </section>
+
+            <section id="field-text">
+                <label for="ImagenOferta">Imagen/video de la oferta</label>
+                <input type="file" id="ImagenOferta" name="ImagenOferta" accept=".jpg, .jpeg, .img, .png">
+
+                <!-- <input type="text" id="imagenOferta" name="imagenOferta" placeholder="Ingrese la ruta" required> -->
+            </section>
+
+            <!-- <input type="file" id="archivo" name="archivo" accept=".jpg, .jpeg, .png"> -->
+
+            <section id="field-text">
+                <label for="Restricciones">Restricciones</label>
+                <input type="text" id="Restricciones" name="Restricciones" placeholder="Ingrese las restricciones" required>
+            </section>
+        </section>
+    </section>
+
+    <div class="separador"></div>
+
+    <section id="formulario-registrar">
+        <section id="formulario-titulo">
+            <h1 id="registro">Registrar Emprendedor</h1>
+        </section>
+        <section id="formulario">
+            <section id="field-text">
+                <label for="Nombres">Nombres</label>
+                <input type="text" id="Nombres" name="Nombres" placeholder="Ingresa sus nombres" required>
+            </section>
+
+            <section id="field-text">
+                <label for="Apellidos">Apellidos</label>
+                <input type="text" id="Apellidos" name="Apellidos" placeholder="Ingrese sus apellidos" required>
+            </section>
+
+            <section id="field-text">
+                <label for="DNI">DNI</label>
+                <input type="text" id="DNI" name="DNI" placeholder="Ingrese su DNI" required>
+            </section>
+
+            <section id="field-text">
+                <label for="RUC">RUC</label>
+                <input type="text" id="RUC" name="RUC" placeholder="Ingrese su RUC" required>
+            </section>
+
+            <section id="field-text">
+                <label for="NombreNegocio">Nombre del establecimiento</label>
+                <input type="text" id="NombreNegocio" name="NombreNegocio" placeholder="Ingrese el nombre" required>
+            </section>
+
+            <section id="field-text">
+                <label for="LogotipoNegocio">Logo del Establecimiento</label>
+                <input type="file" id="LogotipoNegocio" name="LogotipoNegocio" accept=".jpg, .jpeg, .img, .png">
+                <!-- <input type="text" id="logoEstablecimiento" name="logoEstablecimiento" placeholder="Ingrese la ruta" required> -->
+            </section>
+
+            <section id="field-text">
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" name="telefono" placeholder="Ingrese su teléfono" required>
+            </section>
+
+            <section id="field-text">
+                <label for="Password">Contraseña</label>
+                <input type="Password" id="Password" name="Password" placeholder="Ingrese su contraseña" required>
+
+            </section>
+
+        </section>
+    </section>
+
+    <div class="separador"></div>
+
+    <section id="formulario-botones">
+        <input type="submit" value="Registrar" class="registrar">
+        <input type="reset" value="Cancelar" class="cancelar">
+    </section>
+
+    <div class="separador"></div><div class="separador"></div>
+</form>
+
+
+</body>
+</html>

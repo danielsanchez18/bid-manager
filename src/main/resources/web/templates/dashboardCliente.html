@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es" charset="UTF-8">
+<head>
+    <meta lang="es" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Dashboard Cliente</title>
+</head>
+<body>
+<header>
+    <section id="cabezal">
+        <a href="registrarOfertaEmprendedor.html" id="logo">Ofertas</a>
+        <a href="/logout"><button class="cabezal">Cerrar Sesion</button></a>
+    </section>
+</header>
+
+<h2 id="bienvenido">Bienvenido: CLIENTE ${username}</h2>
+
+<div class="separador"></div>
+
+<section style="display: flex; flex-direction: column; align-items: center;">
+    <section class="contenedor">
+        <a href="/ofertasDashboard?dni=${username}">
+            <section>
+                <section id="formulario" style="width: 200px; height: 150px; padding: 0; justify-content: center; align-content: center;">
+                    <img src="../img/lista.png" alt="lista.png" style="max-height: 70%;">
+                </section>
+                <h2 id="mensaje" style="font-size: 20px;">Lista de Ofertas</h2>
+            </section>
+        </a>
+
+        <a>
+            <section>
+                <section id="formulario" style="width: 200px; height: 150px; padding: 0; justify-content: center; align-content: center;">
+                    <form action="/pedidosCliente" method="post">
+                        <input type="hidden" name="clienteDNI" value="${username}" readonly required>
+                        <button type="submit"><img src="../img/pedidoRealizado.png" alt="pedidoRealizado.png" style="width: 150px; height: 130px; padding: -10px; justify-content: center; align-content: center;"></button>
+                    </form>
+                </section>
+                <h2 id="mensaje" style="font-size: 20px;">Pedidos Realizados</h2>
+            </section>
+        </a>
+    </section>
+
+    <div class="separador"></div>
+
+    <section class="contenedor">
+        <a href="buscarOferta.html">
+            <section>
+                <section id="formulario" style="width: 200px; height: 150px; padding: 0; justify-content: center; align-content: center;">
+                    <img src="../img/buscar.png" alt="buscar.png" style="max-height: 65%;">
+                </section>
+                <h2 id="mensaje" style="font-size: 20px;">Buscar Ofertas</h2>
+            </section>
+        </a>
+        <a>
+            <section>
+                <section id="formulario" style="width: 200px; height: 150px; padding: 0; justify-content: center; align-content: center;">
+                    <form action="/pedidosclienteHoy" method="post">
+                        <input type="hidden" name="clienteDNI" value="${username}" readonly required>
+                        <button type="submit"><img src="../img/calendario.png" alt="calendario.png" style="width: 150px; height: 130px; padding: -10px; justify-content: center; align-content: center;"></button>
+                    </form>
+                </section>
+                <h2 id="mensaje" style="font-size: 20px;">Mis pedidos del dia</h2>
+            </section>
+        </a>
+
+    </section>
+</section>
+
+
+</body>
+</html>

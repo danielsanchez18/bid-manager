@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <title>Registrar Cliente</title>
+</head>
+<body>
+<header>
+  <section id="cabezal">
+    <a href="registrarOfertaEmprendedor.html" id="logo">Ofertas</a>
+    <a href="/login"><button class="cabezal">Ingresar</button></a>
+  </section>
+</header>
+
+<h2 id="bienvenido">Bienvenido</h2>
+<div class="separador"></div>
+
+<form class="formulario-main" action="/registrarCliente" method="post" enctype="multipart/form-data">
+  <section id="formulario-registrar">
+    <section id="formulario-titulo">
+      <h1 id="registro">Datos del Cliente</h1>
+    </section>
+    <section id="formulario"  style="height: 450px;">
+      <section id="field-text">
+        <label for="nombreCliente">Nombres</label>
+        <input type="text" id="nombreCliente" name="nombreCliente" placeholder="Ingresa sus nombres" required>
+      </section>
+
+      <section id="field-text">
+        <label for="apellidosCliente">Apellidos</label>
+        <input type="text" id="apellidosCliente" name="apellidosCliente" placeholder="Ingrese sus apellidos" required>
+      </section>
+
+      <section id="field-text">
+        <label for="dni">DNI</label>
+        <input type="text" id="dni" name="dni" placeholder="Ingrese su DNI" required>
+      </section>
+
+      <section id="field-text">
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" name="cantidad" placeholder="Ingrese la cantidad" required>
+      </section>
+
+      <section id="field-text">
+        <label for="metodoPago">Método de pago</label>
+        <input type="text" id="metodoPago" name="metodoPago" placeholder="Ingrese el método de pago" required>
+      </section>
+
+      <section id="field-text">
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" name="telefono" placeholder="Ingrese su teléfono" required>
+      </section>
+
+      <section id="field-text">
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Ingrese su direccion" required>
+      </section>
+
+      <section id="field-text">
+        <label for="contraseñaCliente">Contraseña</label>
+        <input type="text" id="contraseñaCliente" name="contraseñaCliente" placeholder="Ingrese su contraseña" required>
+      </section>
+
+
+      <section id="field-text">
+        <label for="referencia">Referencia</label>
+        <input type="text" id="referencia" name="referencia" placeholder="Ingrese una referencia" style="width: 649px;">
+      </section>
+
+    </section>
+  </section>
+
+  <div class="separador"></div>
+
+  <section id="formulario-botones">
+    <input type="submit" value="Realizar Pedido" class="registrar">
+    <input type="reset" value="Cancelar" class="cancelar">
+  </section>
+
+  <div class="separador"></div><div class="separador"></div>
+</form>
+
+
+</body>
+</html>

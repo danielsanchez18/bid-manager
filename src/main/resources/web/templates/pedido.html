@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es" charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido</title>
+    <link rel="stylesheet" type="text/css" href="../css/uostyle.css">
+    <link rel="icon" href="../img/atf3/offersU.png" type="image/png">
+</head>
+<style>
+    td, th {
+        text-align: center;
+        padding: 10px;
+        border: 0;
+    }
+</style>
+<body>
+<h1>Código del Pedido ${titulo}</h1>
+    <div class="content-container">
+        <div class="content-block">
+            <table class="table is-hoverable">
+                <thead>
+                </thead>
+                <tbody>
+                ${items}
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+        </div>
+        <div>
+            <figure class="image is-64x64">
+                <img class="img-custom is-rounded" src="upload/${qr}" style="max-width: 240px; max-height: 240px;">
+            </figure>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body>
+<header>
+    <section id="cabezal">
+        <a href="templates/registrarOferta.html" id="logo">Ofertas</a>
+        <section style=" width: 62%;"></section>
+        <h2 id="mensaje" style="padding: 0; font-size: 18px; text-align: end;  margin-right: 10px;">¿No tienes una cuenta?</h2>
+        <a href="templates/registrarEmprendedor.html"> <button class="cabezal">Registrar</button></a>
+    </section>
+</header>
+
+<form class="formulario-main" action="loginEmprendedor" method="post">
+    <h2 id="mensaje" style="padding: 0; padding-top: 60px;">Iniciar Sesión</h2>
+    <h2 id="mensaje" style="padding: 8px; color: rgb(166, 166, 166); font-size: 20px;">(Emprendedor)</h2>
+    <section class="separador" style="height: 20px;"></section>
+    <section id="formulario" style="display: flex; flex-direction: column; width: auto; height: 180px; padding: 30px; padding-right: 40px; margin: 0;">
+
+        <section id="field-text">
+            <label for="dni">DNI</label>
+            <input type="text" id="dni" name="dni" placeholder="Ingrese su DNI" required>
+        </section>
+
+        <section id="field-text" >
+            <label for="contraseña">Contraseña</label>
+            <input type="text" id="contraseña" name="contraseña" placeholder="Ingrese su contraseña" required>
+        </section>
+    </section>
+    <section class="separador" style="height: 30px"></section>
+    <button type="submit" class="cabezal" style="font-weight: 500;">Ingresar</button>
+
+
+</form>
+
+<section>
+    <h2 id="mensaje" style="padding: 0; padding-top: 60px; font-size: 18px;">¿No eres emprendedor?</h2>
+    <section>
+        <a href="loginCliente.html" id="regresar" style="display: flex; flex-direction: column;">Cliente</a>
+        <a href="loginModerador.html" id="regresar" style="display: flex; flex-direction: column;" >Moderador</a>
+    </section>
+</section>
+
+</body>
+</html>

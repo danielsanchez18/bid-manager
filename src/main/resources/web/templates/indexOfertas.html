@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Login</title>
+</head>
+<style>
+    .cabezal1{
+        width: 120px;
+        position: absolute;
+        padding: 10px;
+        margin-bottom: 10px;
+        top: 2.5%;
+        right: 25%;
+    }
+    .cabezal2{
+        width: 120px;
+        position: absolute;
+        padding: 10px;
+        margin-bottom: 10px;
+        top: 2.5%;
+        right: 15%;
+    }
+    .cabezal3{
+        width: 120px;
+        position: absolute;
+        padding: 10px;
+        margin-bottom: 10px;
+        top: 2.5%;
+        right: 5%;
+    }
+    .card {
+        width: 500px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 540px; /* Altura fija para todas las tarjetas */
+    }
+
+    .card h2{
+        text-align: center;
+        padding: 0 15px;
+        margin: 8px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .product-info {
+        margin-top: 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .product-info p {
+        text-align: center;
+        max-width: 90%; /* Establecer el ancho máximo para los párrafos */
+        margin: 5px auto; /* Añadir un pequeño margen y centrarlos */
+        overflow-wrap: break-word; /* Permitir el quiebre de palabras si es necesario */
+    }
+
+    .contedor-productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 50px;
+        width: 96%;
+    }
+
+    .row {
+        margin-bottom: 80px; /* Separación entre filas */
+    }
+</style>
+<body>
+<header>
+    <section id="cabezal">
+        <a href="templates/registrarOfertasEmprendedor.html" id="logo">Ofertas</a>
+    </section>
+    <a href="../loginCliente.html"> <button class="cabezal cabezal1">Cliente</button></a>
+    <a href="../loginEmprendedor.html"> <button class="cabezal cabezal2">Emprendedor</button></a>
+    <a href="../loginModerador.html"> <button class="cabezal cabezal3">Moderador</button></a>
+</header>
+<div class="contedor-productos">
+    ${items}
+</div>
+
+</body>
+</html>

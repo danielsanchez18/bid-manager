@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Denuncia</title>
+</head>
+<body>
+<header>
+    <section id="cabezal">
+        <a href="/dashboardEmprendedor" id="logo">Ofertas</a>
+        <a href="/login"><button class="cabezal">Ingresar</button></a>
+    </section>
+</header>
+
+<h2 id="bienvenido">Denuncia</h2>
+<div class="separador"></div>
+
+<form class="formulario-main" action="/registrarDenuncia" method="post">
+    <section id="formulario-registrar">
+        <section id="formulario-titulo">
+            <h1 id="registro">Registro de Denuncia</h1>
+        </section>
+        <section id="formulario" style="height: 160px">
+            <section id="field-text">
+                <label for="OfertaID">ID de Oferta</label>
+                <input type="text" id="OfertaID" name="OfertaID" value="${OfertaID}" required>
+            </section>
+
+            <section id="field-text">
+                <label for="clienteDni">DNI del Cliente</label>
+                <input type="text" id="clienteDni" name="clienteDni" value="${clienteDni}" placeholder="Ingrese su DNI" required>
+            </section>
+
+            <section id="field-text">
+                <label for="restricciones">Motivo</label>
+                <input type="text" id="restricciones" name="motivo" placeholder="Ingrese el motivo de la denuncia" required>
+            </section>
+
+            </section>
+        </section>
+    </section>
+
+    <div class="separador"></div>
+
+    <section id="formulario-botones">
+        <input type="submit" value="Registrar" class="registrar">
+        <input type="reset" value="Cancelar" class="cancelar">
+    </section>
+
+    <div class="separador"></div><div class="separador"></div>
+</form>
+
+
+</body>
+</html>

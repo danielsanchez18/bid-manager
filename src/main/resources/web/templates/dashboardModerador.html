@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Dashboard Moderador</title>
+</head>
+<body>
+<header>
+    <section id="cabezal">
+        <a href="registrarOfertaEmprendedor.html" id="logo">Ofertas</a>
+        <a href="/logout"><button class="cabezal">Cerrar Sesión</button></a>
+    </section>
+</header>
+
+<h2 id="bienvenido">Bienvenido: MODERADOR ${username}</h2>
+
+<div class="separador"></div>
+
+<section style="display: flex; flex-direction: column; align-items: center;">
+    <section class="contenedor">
+        <a href="/indexOfertas">
+            <section>
+                <section id="formulario" style="width: 200px; height: 150px; padding: 0; justify-content: center; align-content: center;">
+                    <img src="../img/lista.png" alt="lista.png" style="max-height: 70%;">
+                </section>
+                <h2 id="mensaje" style="font-size: 20px;">Lista de Ofertas</h2>
+            </section>
+        </a>
+
+        <a href="pedidosRealizados.html">
+            <section>
+                <section id="formulario" style="width: 200px; height: 150px; padding: 0; justify-content: center; align-content: center;">
+                    <img src="../img/pedidoRealizado.png" alt="pedidoRealizado.png" style="max-height: 70%;">
+                </section>
+                <h2 id="mensaje" style="font-size: 20px;">Pedidos Realizados</h2>
+            </section>
+        </a>
+
+        <a href="cancelarPedido.html">
+            <section>
+                <section id="formulario" style="width: 200px; height: 150px; padding: 0; justify-content: center; align-content: center;">
+                    <img src="../img/cancelar.png" alt="cancelar.png" style="max-height: 70%;">
+                </section>
+                <h2 id="mensaje" style="font-size: 20px;">Acept/Rech Denuncias</h2>
+            </section>
+        </a>
+
+    </section>
+
+    <div class="separador"></div>
+
+    <section class="contenedor">
+        <a href="buscarOferta.html">
+            <section>
+                <section id="formulario" style="width: 200px; height: 150px; padding: 0; justify-content: center; align-content: center;">
+                    <img src="../img/buscar.png" alt="buscar.png" style="max-height: 65%;">
+                </section>
+                <h2 id="mensaje" style="font-size: 20px;">Buscar Ofertas</h2>
+            </section>
+        </a>
+
+        <a href="cantidadOfertasDia.html">
+            <section>
+                <section id="formulario" style="width: 200px; height: 150px; padding: 0; justify-content: center; align-content: center;">
+                    <img src="../img/descuentoDia.png" alt="descuentoDia.png" style="max-height: 80%;">
+                </section>
+                <h2 id="mensaje" style="font-size: 20px;">Cantidad de Ofertas <br> (Dia)</h2>
+            </section>
+        </a>
+
+        <a href="cantidadOfertasGlobal.html">
+            <section>
+                <section id="formulario" style="width: 200px; height: 150px; padding: 0; justify-content: center; align-content: center;">
+                    <img src="../img/descuentoGlobal.png" alt="descuentoDia.png" style="max-height: 80%;">
+                </section>
+                <h2 id="mensaje" style="font-size: 20px;">Cantidad de Ofertas <br> (Global)</h2>
+            </section>
+        </a>
+
+    </section>
+</section>
+
+
+</body>
+</html>

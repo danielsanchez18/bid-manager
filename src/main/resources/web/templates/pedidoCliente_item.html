@@ -1,0 +1,14 @@
+<tr>
+    <td>${PedidoID}</td>
+    <td>${NombreOferta}</td>
+    <td>${FechaPedido}</td>
+    <td>${Cantidad}</td>
+    <td>${MetodoPago}</td>
+    <td>${Estado}</td>
+    <td class="transparent-border">
+        <form action="/estadoPedido" method="post">
+            <input type="hidden" id="PedidoID" name="PedidoID" value="${PedidoID}" readonly required>
+            <div class="button-container"><button class="btn" type="submit">CANCELAR</button></div>
+        </form>
+    </td>
+</tr>

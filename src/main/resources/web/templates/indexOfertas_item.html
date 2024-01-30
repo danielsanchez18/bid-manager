@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="card">
+        <h2>${NombreOferta}</h2>
+        <img src="img/${Imagen}" style="max-width: 100%; height: 180px;">
+        <div class="product-info" style="display: flex; flex-direction: column; align-items: center;">
+            <p><strong>Fecha de Inicio:</strong> ${FechaInicio}</p>
+            <p><strong>Fecha de Fin:</strong> ${FechaFin}</td></p>
+            <p><strong>Stock:</strong> ${CantidadLimite}</p>
+            <p><strong>Precio:</strong> ${Monto}</p>
+            <p><strong>Restricciones:</strong> ${Restricciones}</p>
+            <div style="display: flex; justify-content: center;">
+            <form action="/comprarOferta" method="post" style="display: inline-block; justify-content: space-between;">
+                <input type="hidden" id="ofertaID" name="ofertaID" value="${ofertaID}" readonly required>
+                <input type="hidden" id="estadoOferta" name="estadoOferta" value="${estadoOferta}" readonly required>
+                <div class="button-container"><button class="cabezal" type="submit">COMPRA</button></div>
+            </form>
+            <form action="/denunciar" method="post" style="display: inline-block; justify-content: space-between; margin-left: 5px;">
+                <input type="hidden" id="ofertaID_denuncia" name="ofertaID" value="${ofertaID}" readonly required>
+                <div class="button-container"><button class="cabezal" type="submit">DENUNCIA</button></div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>

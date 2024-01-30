@@ -1,0 +1,19 @@
+<tr>
+    <td>${PedidoID}</td>
+    <td>${NombreOferta}</td>
+    <td>${dniCliente}</td>
+    <td>${FechaPedido}</td>
+    <td>${Cantidad}</td>
+    <td>${MetodoPago}</td>
+    <td class="transparent-border">
+        <form action="/estadoPedido" method="post">
+            <input type="hidden" id="PedidoID" name="PedidoID" value="${PedidoID}" readonly required>
+            <select id="NuevoEstado" name="NuevoEstado">
+                <option value="Pagado">Pagado</option>
+                <option value="En proceso">En proceso</option>
+                <option value="Entregado">Entregado</option>
+            </select>
+            <div class="button-container"><button class="btn" type="submit">ACTUALIZAR</button></div>
+        </form>
+    </td>
+</tr>

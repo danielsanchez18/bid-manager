@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Jetty</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<h1>${titulo}</h1>
+
+<table class="table is-hoverable">
+    <thead>
+    <tr>
+        <th>PedidoID</th>
+        <th>Nombre de la Oferta</th>
+        <th>Cantidad</th>
+        <th>Metodo de Pago</th>
+        <th>Fecha del Pedido</th>
+        <th>Estado</th>
+    </tr>
+    </thead>
+    <tbody>
+    ${items}
+    </tbody>
+    <tfoot>
+    <tr>
+        <th colspan="5">Total de pedidos</th>
+        <th>${nPed}</th>
+    </tr>
+    </tfoot>
+</table>
+</body>
+</html>

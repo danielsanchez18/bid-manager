@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrado Correctamente</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="mensaje-container">
+    <h2 id="mensaje">Registrado Correctamente</h2>
+    <button id="regresar" class="cabezal">Regresar</button>
+</div>
+
+<script>
+    // Función para regresar a la página anterior en el historial al hacer clic en el botón de regresar
+    document.getElementById('regresar').addEventListener('click', function() {
+        window.history.back();
+    });
+
+    // Función para recargar la página automáticamente después de 5 segundos
+    setTimeout(function() {
+        location.reload();
+    }, 1000); // 1000 milisegundos = 1 segundo
+</script>
+</body>
+</html>

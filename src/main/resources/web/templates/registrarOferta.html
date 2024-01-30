@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Registrar Oferta</title>
+</head>
+<body>
+<header>
+    <section id="cabezal">
+        <a href="/dashboardEmprendedor" id="logo">Ofertas</a>
+        <a href="/login"><button class="cabezal">Ingresar</button></a>
+    </section>
+</header>
+
+<h2 id="bienvenido">Bienvenido</h2>
+<div class="separador"></div>
+
+<form class="formulario-main" action="/registrarOferta" method="post" enctype="multipart/form-data">
+    <section id="formulario-registrar">
+        <section id="formulario-titulo">
+            <h1 id="registro">Registrar Oferta</h1>
+        </section>
+        <section id="formulario" style="height: 460px">
+            <section id="field-text">
+                <label for="nombreOferta">Nombre de la oferta</label>
+                <input type="text" id="nombreOferta" name="nombreOferta" placeholder="Ingresa el nombre" required>
+            </section>
+
+            <section id="field-text">
+                <label for="cantidad">Cantidad Límite</label>
+                <input type="number" id="cantidad" name="cantidad" placeholder="Ingresa la cantidad" required>
+            </section>
+
+
+            <section id="field-text">
+                <label for="fechaInicio">Fecha de Inicio</label>
+                <input type="date" id="fechaInicio" name="fechaInicio" placeholder="dd/mm/aaaa" required>
+            </section>
+
+
+            <section id="field-text">
+                <label for="fechaFin">Fecha de Fin</label>
+                <input type="date" id="fechaFin" name="fechaFin" placeholder="dd/mm/aaaa" required>
+            </section>
+
+            <section id="field-text">
+                <label for="precio">Precio</label>
+                <input type="text" id="precio" name="precio" placeholder="Ingrese el precio" required>
+            </section>
+
+            <section id="field-text">
+                <label for="imagenOferta">Imagen/video de la oferta</label>
+                <input type="file" id="imagenOferta" name="imagenOferta" placeholder="Ingrese la ruta" required>
+            </section>
+
+            <!-- <input type="file" id="archivo" name="archivo" accept=".jpg, .jpeg, .png"> -->
+
+
+            <section>
+
+                <section id="field-text">
+                    <label for="descripcion">Descripción</label>
+                    <input type="text" id="descripcion" name="descripcion" placeholder="Ingrese la descripción" required>
+                </section>
+
+                <section id="field-text">
+                    <label for="restricciones">Restricciones</label>
+                    <input type="text" id="restricciones" name="restricciones" placeholder="Ingrese las restricciones" required>
+                </section>
+
+                <section id="group">
+                    <section id="field-text">
+                        <label for="dni">DNI</label>
+                        <input type="text" id="dni" name="dni" value="${dni}" required>
+                    </section>
+
+                    <section id="field-text">
+                        <label for="pass">Contraseña</label>
+                        <input type="text" id="pass" name="pass" placeholder="Ingrese su contraseña" required>
+                    </section>
+                </section>
+
+            </section>
+        </section>
+    </section>
+
+    <div class="separador"></div>
+
+    <section id="formulario-botones">
+        <input type="submit" value="Registrar" class="registrar">
+        <input type="reset" value="Cancelar" class="cancelar">
+    </section>
+
+    <div class="separador"></div><div class="separador"></div>
+</form>
+
+
+</body>
+</html>

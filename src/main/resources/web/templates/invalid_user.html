@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Error</title>
+</head>
+<body>
+<header>
+  <section id="cabezal">
+    <a href="registrarOferta.html" id="logo">Ofertas</a>
+    <a href="../web/login.html"><button class="cabezal">Cerrar Sesión</button></a>
+  </section>
+</header>
+
+<h2 id="mensaje">Error al iniciar sesión</h2>
+<h2>Error: ${error_detail}</h2>
+
+<section style="display: flex; justify-content: center; padding: 40px;">
+  <img src="../img/error.png" alt="error.png" style="width: 10%;">
+</section>
+
+<section style="text-align: center;">
+  <label style="font-size: 20px;">Intentelo nuevamente</label>
+</section>
+
+<section style="display: flex; justify-content: center;">
+  <a onclick="goBack()" id="regresar">Regresar</a>
+</section>
+
+<script>
+  function goBack() {
+      window.history.back();
+  }
+</script>
+</body>
+</html>

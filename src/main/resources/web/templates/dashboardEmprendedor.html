@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Dashboard Emprendedor</title>
+</head>
+<body>
+<header>
+    <section id="cabezal">
+        <a href="#" id="logo">Ofertas</a>
+        <a href="/logout"><button class="cabezal">Cerrar Sesión</button></a>
+    </section>
+</header>
+
+<h2 id="bienvenido">Bienvenido: EMPRENDEDOR ${username}</h2>
+
+<div class="separador"></div>
+
+<section style="display: flex; flex-direction: column; align-items: center;">
+    <section class="contenedor" style="width: 50%;">
+        <a href="/formularioOferta?dni=${username}">
+            <section>
+                <section id="formulario" style="width: 200px; height: 150px; padding: 0; justify-content: center; align-content: center;">
+                    <img src="../img/registrar.png" alt="registrar.png" style="max-height: 70%;">
+                </section>
+                <h2 id="mensaje" style="font-size: 20px;">Registrar Ofertas</h2>
+            </section>
+        </a>
+
+        <a href="/ofertasDashboard?dni=${username}">
+            <section>
+                <section id="formulario" style="width: 200px; height: 150px; padding: 0; justify-content: center; align-content: center;">
+                    <img src="../img/lista.png" alt="lista.png" style="max-height: 70%;">
+                </section>
+                <h2 id="mensaje" style="font-size: 20px;">Lista de Ofertas</h2>
+            </section>
+        </a>
+
+        <a>
+            <section>
+                <section id="formulario" style="width: 200px; height: 150px; padding: 0; justify-content: center; align-content: center;">
+                    <form action="/pedidosHoy" method="post">
+                        <input type="hidden" name="emprendedorDNI" value="${username}" readonly required>
+                        <input type="hidden" name="estado" value="Realizado" readonly required>
+                        <button type="submit"><img src="../img/pedidoRealizado.png" alt="pedidoRealizado.png" style="width: 150px; height: 130px; padding: -10px; justify-content: center; align-content: center;"></button>
+                    </form>
+                </section>
+                <h2 id="mensaje" style="font-size: 20px;">Pedidos Realizados</h2>
+            </section>
+        </a>
+
+    </section>
+
+    <div class="separador"></div>
+
+    <section class="contenedor" style="width: 50%;">
+
+        <a>
+            <section>
+                <section id="formulario" style="width: 200px; height: 150px; padding: 0; justify-content: center; align-content: center;">
+                    <form action="/pedidosHoy" method="post">
+                        <input type="hidden" name="emprendedorDNI" value="${username}" readonly required>
+                        <input type="hidden" name="estado" value="Pagado" readonly required>
+                        <button type="submit"><img src="../img/pagar.png" alt="pagar.png" style="width: 150px; height: 130px; padding: -10px; justify-content: center; align-content: center;"></button>
+                    </form>
+                </section>
+                <h2 id="mensaje" style="font-size: 20px;">Pedidos Pagados</h2>
+            </section>
+        </a>
+
+        <a>
+            <section>
+                <section id="formulario" style="width: 200px; height: 150px; padding: 0; justify-content: center; align-content: center;">
+                    <form action="/pedidosHoy" method="post">
+                        <input type="hidden" name="emprendedorDNI" value="${username}" readonly required>
+                        <input type="hidden" name="estado" value="Entregado" readonly required>
+                        <button type="submit"><img src="../img/entregar.png" alt="entregar.png" style="width: 150px; height: 130px; padding: -10px; justify-content: center; align-content: center;"></button>
+                    </form>
+
+                </section>
+                <h2 id="mensaje" style="font-size: 20px;">Pedidos Entregados</h2>
+            </section>
+        </a>
+
+    </section>
+</section>
+
+
+</body>
+</html>

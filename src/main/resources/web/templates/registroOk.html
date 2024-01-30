@@ -1,0 +1,55 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Oferta registrada</title>
+</head>
+<body>
+<header>
+    <section id="cabezal">
+        <a href="registrarOfertaEmprendedor.html" id="logo">Ofertas</a>
+        <a href="/login"><button class="cabezal">Ingresar</button></a>
+    </section>
+</header>
+
+<h2 id="bienvenido">Bienvenido</h2>
+<div class="separador"></div>
+
+<form class="formulario-main" action="/registroOk" method="post">
+    <!-- Otros detalles -->
+
+    <section id="detalles-contenido">
+        <h3>Fecha de Inicio:</h3> <p>${requestScope.FechaInicio}</p>
+    </section>
+    <section id="detalles-contenido">
+        <h3>Fecha de Fin:</h3> <p>${requestScope.FechaFin}</p>
+    </section>
+    <section id="detalles-contenido">
+        <h3>Cantidad Límite:</h3> <p>${requestScope.CantidadLimite}</p>
+    </section>
+    <section id="detalles-contenido">
+        <h3>Monto:</h3> <p>${requestScope.Monto}</p>
+    </section>
+    <section id="detalles-contenido">
+        <h3>Imagen Oferta:</h3> <p>${requestScope.ImagenOferta}</p>
+    </section>
+    <section id="detalles-contenido">
+        <h3>Restricciones:</h3> <p>${requestScope.Restricciones}</p>
+    </section>
+    <section id="detalles-contenido">
+        <h3>Estado Oferta:</h3> <p>${requestScope.Estado}</p>
+    </section>
+    <section id="qr">
+        <!-- Aquí puedes agregar el código necesario para mostrar un código QR si es aplicable -->
+    </section>
+</section>
+</form>
+
+<!-- Otros elementos de la página -->
+
+</body>
+</html>
+
